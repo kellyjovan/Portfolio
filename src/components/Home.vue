@@ -7,6 +7,14 @@
         <h1 class="fancy"><span>Jovan Kelly</span></h1>
         <h5 class="subtitle">A future full-stack developer</h5>
       </div>
+      <ul class="media-icons flex-column nav">
+        <li>
+          <a href="https://github.com/kellyjovan" target="_blank"><i class="fab fa-github-alt"></i></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/jovan-k-4608629b/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </li>
+      </ul>
     </div>
   </section>
 
@@ -57,4 +65,43 @@ export default {
     animation: 2s growOut;
   }
 
+  .media-icons {
+    position: fixed;
+    right: 0;
+    top: 80vh;
+    color: white;
+    font-size: 30px;
+    margin-right: 15px;
+  }
+
+  .media-icons a, .media-icons a:visited {
+    color: white;
+  }
+
+  .media-icons li:hover i {
+    animation: 1s wobble;
+    color: #252627;
+  }
+
+  @keyframes wobble{
+    10%, 60% {
+      transform: rotate(10deg)
+    }
+
+    20%, 70% {
+      transform: rotate(-15deg)
+    }
+
+    30%, 80% {
+      transform: rotate(20deg)
+    }
+
+    40%, 90% {
+      transform: rotate(-25deg)
+    }
+
+    50%, 100% {
+      transform: rotate(30deg)
+    }
+  }
 </style>

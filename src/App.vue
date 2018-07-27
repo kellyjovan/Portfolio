@@ -25,11 +25,15 @@ export default {
   color: white;
 }
 
+body {
+  background-color: #252627;
+}
+
 main {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
+  left: 60px;
+  right: 0;
   height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
@@ -82,8 +86,8 @@ main {
 
 section {
   height: 100%;
+  width: 100%;
   padding-top: 80px;
-  background-color: #252627;
   overflow-x: hidden;
   overflow-y: auto;
 }

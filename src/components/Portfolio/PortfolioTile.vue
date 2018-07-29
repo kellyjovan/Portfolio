@@ -1,5 +1,5 @@
 <template>
-  <div class="col-sm-6 col-md-4 col-lg-3 project">
+  <div class="col-sm-6 col-md-4 col-lg-3 project" @click="viewDetail">
     <div class="image" :style="{backgroundImage: `url(${project.image}`}"></div>
     <span class="overlay">
       <h3>
@@ -12,7 +12,12 @@
 
 <script>
 export default {
-  props: ['project']
+  props: ['project'],
+  methods: {
+    viewDetail () {
+      this.$router.push({name: 'PortfolioDetail', params: {id: this.project.id}})
+    }
+  }
 }
 </script>
 
@@ -21,6 +26,7 @@ export default {
     height: 30vh;
     padding: 0;
     overflow: hidden;
+    cursor: pointer;
   }
 
   .project:hover .overlay {

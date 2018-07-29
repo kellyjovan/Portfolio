@@ -45,16 +45,6 @@
               <p style="vertical-align: middle">JovanKelly5@gmail.com</p>
             </div>
           </div>
-          <br>
-          <div class="row">
-            <div class="col-4">
-              <div style="width: 4em; height: 4em; background: rgba(93, 96, 98, .8); padding: 0.5em; border-radius: 3px;"><i style="font-size: 3em; color: #252627" class="material-icons">local_phone</i></div>
-            </div>
-            <div class="col-7 offset-xs-1" style="height: 80px; line-height: 70px">
-              <p style="vertical-align: middle">(347) 499-8592</p>
-            </div>
-          </div>
-          <hr>
         </div>
       </div>
     </div>

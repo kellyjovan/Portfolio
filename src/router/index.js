@@ -4,7 +4,9 @@ import Home from '@/components/Home'
 import About from '@/components/About'
 import Contact from '@/components/Contact'
 import Skills from '@/components/Skills'
-import Portfolio from '@/components/Portfolio'
+import Portfolio from '@/components/Portfolio/Portfolio'
+import PortfolioDetail from '@/components/Portfolio/PortfolioDetail'
+import PortfolioHome from '@/components/Portfolio/PortfolioHome'
 
 Vue.use(Router)
 
@@ -33,8 +35,19 @@ export default new Router({
     },
     {
       path: '/portfolio',
-      name: 'Portfolio',
-      component: Portfolio
+      component: Portfolio,
+      children: [
+        {
+          path: '',
+          name: 'Portfolio',
+          component: PortfolioHome
+        },
+        {
+          path: ':id',
+          name: 'PortfolioDetail',
+          component: PortfolioDetail
+        }
+      ]
     }
   ]
 })

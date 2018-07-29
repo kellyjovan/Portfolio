@@ -26,7 +26,7 @@ export default {
 }
 
 body {
-  background-color: #252627;
+  background-color: #05182E;
 }
 
 main {

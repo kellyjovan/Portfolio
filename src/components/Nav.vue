@@ -24,8 +24,7 @@ export default {
     top: 0;
     left: 0;
     overflow: hidden;
-    background-color: #08090a;
-    opacity: 0.7;
+    background-color: rgba(2, 17, 35, .7);
     vertical-align: middle;
     color: white;
     z-index: 999;
@@ -52,11 +51,11 @@ export default {
   }
 
   li:hover {
-    color: #252627;
+    color: #07366E;
     animation: 1s growIn;
   }
 
   .active {
-    color: #252627;
+    color: #07366E;
   }
 </style>

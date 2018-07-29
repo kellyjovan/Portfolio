@@ -80,7 +80,7 @@ export default {
 
   .media-icons li:hover i {
     animation: 1s wobble;
-    color: #252627;
+    color: #07366E;
   }
 
   @keyframes wobble{
